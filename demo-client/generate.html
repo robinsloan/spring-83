@@ -1,0 +1,124 @@
+<html>
+<head>
+  <script src="/js/noble-ed25519.js"></script>
+  <script>
+
+  const KEY_REGEX = /83e(0[1-9]|1[0-2])23$/;
+
+  let animateKeyProgress = function(t) {
+    if (shouldShowProgress) {
+      let frame = (t / 1000) % 4;
+      progressDisplay.innerHTML = "Searching for a conforming key" + ".".repeat(frame);
+      requestAnimationFrame(animateKeyProgress);
+    }
+  }
+
+  let findKeypair = async function() {
+    shouldShowProgress = true;
+    requestAnimationFrame(animateKeyProgress);
+
+    let secretBytes, publicBytes;
+    let secret, public;
+
+    let t = performance.now();
+    document.querySelector("p.started").innerHTML = `Started at ${new Date().toString()}.`;
+
+    let iterations = 0;
+
+    while (!public?.match(KEY_REGEX)) {
+      secretBytes = nobleEd25519.utils.randomPrivateKey();
+      publicBytes = await nobleEd25519.getPublicKey(secretBytes);
+      public = nobleEd25519.utils.bytesToHex(publicBytes);
+      iterations++;
+      if (iterations % 10000 == 0) {
+        console.log(`${iterations} iterations!`);
+      }
+    }
+
+    let coin = new Audio("/media/coin.mp3");
+    coin.play();
+
+    secret = nobleEd25519.utils.bytesToHex(secretBytes);
+
+    shouldShowProgress = false;
+
+    console.log(`generated valid keypair in ${(performance.now() - t)/1000.0}s`);
+
+    progressDisplay.innerHTML = `The keypair file should have downloaded. You can drag that file into <a href="/client.html">the client</a> to log in. You might also want to back it up somewhere secure.`;
+
+    saveKeypairFile(secret, public);
+  }
+
+  let saveKeypairFile = function(secret, public) {
+    const keyString = `${secret}${public}`;
+    const memo = public.slice(0, 12);
+    const timestamp = (new Date()).toISOString().slice(0, 10);
+    const downloader = document.createElement("a");
+    const file = new Blob([keyString], { type: "text/plain;charset=utf-8" });
+    downloader.href = URL.createObjectURL(file);
+    downloader.download = `spring-83-keypair-${timestamp}-${memo}.txt`;
+    downloader.click();
+  }
+
+  let generateButton;
+  let progressDisplay;
+  let shouldShowProgress = false;
+
+  document.addEventListener("DOMContentLoaded", (e) => {
+    generateButton = document.querySelector("generate-button");
+    progressDisplay = document.querySelector("p.progress");
+
+    generateButton.addEventListener("click", (e) => {
+      generateButton.classList.add("generating");
+      findKeypair();
+    });
+  });
+  </script>
+
+<style>
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 2rem;
+  }
+
+  generate-button {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    background-color: #00c;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  generate-button:hover {
+    background-color: #0c0;
+  }
+
+  generate-button.generating {
+    pointer-events: none;
+    background-color: #ddd;
+  }
+
+  generate-button.generating:hover {
+    background-color: #ddd;
+  }
+</style>
+
+</head>
+
+<body>
+
+<p>Press this button to find a conforming keypair. This should take between 10-30 minutes. When the program finishes, it will play a sound and download the keypair file.</p>
+
+<generate-button>Generate keypair</generate-button>
+
+<p class="started"></p>
+<p class="progress"></p>
+
+</body>
