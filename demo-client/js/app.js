@@ -296,8 +296,8 @@ Client.loadKeypairFromString = async function(fileString) {
 
   console.log("That's a good keypair");
 
-  sessionStorage.setItem("secretKey", secret);
-  sessionStorage.setItem("publicKey", public);
+  localStorage.setItem("secretKey", secret);
+  localStorage.setItem("publicKey", public);
 
   Client.publicKeyDisplay.value = `${Client.homeServer()}${public}`;
   Client.hideDropZone();
@@ -308,12 +308,12 @@ Client.loadKeypairFromString = async function(fileString) {
 }
 
 Client.forgetKeypair = async function() {
-  sessionStorage.clear();
+  localStorage.clear();
   Client.showDropZone();
 }
 
 Client.getSecretKey = function() {
-  let secret = sessionStorage.getItem("secretKey");
+  let secret = localStorage.getItem("secretKey");
   if (secret) {
     return secret;
   } else {
@@ -323,7 +323,7 @@ Client.getSecretKey = function() {
 }
 
 Client.getPublicKey = function() {
-  let public = sessionStorage.getItem("publicKey");
+  let public = localStorage.getItem("publicKey");
   if (public) {
     return public;
   } else {
