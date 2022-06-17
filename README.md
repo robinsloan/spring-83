@@ -10,7 +10,7 @@ A demo server is operating at `https://bogbody.biz`, if you'd like to read the s
 
 If it seems like the server isn't working as expected: it probably isn't! Feel free to open an issue, or send me a note at `robin@robinsloan.com`.
 
-If you've implemented a client or server, at any level of completeness, and you would like it added to this page, let me know!
+If you've implemented a client or server, at any level of completeness, and you would like it added to this page, let me know.
 
 A demo client is included in this repository. See the [demo-client/](demo-client/) folder for more info.
 
