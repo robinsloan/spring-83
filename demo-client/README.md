@@ -2,6 +2,8 @@
 
 This is a demo Spring '83 client that you can run as a web app on your own computer. It's intended more as a "rhetorical exhibit" than a real application; that said, I have been using it happily for several months!
 
+![A screenshot of the demo client, showing several boards of varying colors, some with clever styles applied. On the right side, there's a panel for publishing a board of your own.](demo-client-screenshot.png)
+
 ## Getting started
 
 After downloading this repository, you'll want to run
