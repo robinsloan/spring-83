@@ -2,7 +2,7 @@
 
 Welcome! This is a draft protocol that I believe might open up some interesting new possibilities on the internet. If you are just discovering it, I recommend reading [this narrative description](https://www.robinsloan.com/lab/specifying-spring-83/). Don't miss the growing [discussion](https://www.robinsloan.com/lab/specifying-spring-83/#discussion), either.
 
-The modus operandi here is "stumbling forward together". This is speculative software intended to invite consideration and imagination; it doesn't have any "users" yet, only co-investigators. That's you!
+This is speculative software intended to invite consideration and imagination; it doesn't have any "users" yet, only co-investigators. That's you!
 
 Here is [the current draft specification](draft-20220616.md). You can also read [the previous draft](draf-20220609.md).
 
