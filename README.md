@@ -13,6 +13,7 @@ If it seems like the server isn't working as expected: it probably isn't! Feel f
 Implementations:
 
 * [royragsdale/s83](https://github.com/royragsdale/s83), in Go
+* [michael-lazar/lets-dance](https://github.com/michael-lazar/lets-dance), in Python (with some great [notes](https://github.com/michael-lazar/lets-dance/blob/main/Notes.md))
 
 If you've implemented a client or server, at any level of completeness, and you would like me to list it here, let me know.
 
