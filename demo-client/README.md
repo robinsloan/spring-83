@@ -1,4 +1,4 @@
-# Boardinghouse
+# Boarding House
 
 This is a demo Spring '83 client that you can run as a web app on your own computer. It's intended more as a "rhetorical exhibit" than a real application; that said, I have been using it happily for several months!
 
@@ -30,7 +30,9 @@ I've tried to guard against surprising data loss, but it WILL happen, eventually
 
 You can press `Esc` to quickly toggle the Springfile editor.
 
-This is a non-realtime system! The demo client insists on luxurious pauses and timeouts. Don't expect to see boards percolating while you watch.
+You can compose your board in Markdown! Easy!
+
+This is a non-realtime system. The demo client insists on luxurious pauses and timeouts. Don't expect to see boards percolating while you watch.
 
 ## Status
 
