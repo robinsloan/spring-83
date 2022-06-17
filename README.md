@@ -1,6 +1,6 @@
 # Spring '83
 
-Welcome! This is a draft protocol that I believe might open up some interesting new possibilities on the internet. If you are just discovering it, I recommend reading [this narrative description](https://www.robinsloan.com/lab/specifying-spring-83/). Don't miss the links collected at the end, highlighting comment and critique elsewhere.
+Welcome! This is a draft protocol that I believe might open up some interesting new possibilities on the internet. If you are just discovering it, I recommend reading [this narrative description](https://www.robinsloan.com/lab/specifying-spring-83/). Don't miss the growing [discussion](https://www.robinsloan.com/lab/specifying-spring-83/#discussion), either.
 
 The modus operandi here is "stumbling forward together". This is speculative software intended to invite consideration and imagination; it doesn't have any "users" yet, only co-investigators. That's you!
 
@@ -10,6 +10,8 @@ A demo server is operating at `https://bogbody.biz`, if you'd like to read the s
 
 If it seems like the server isn't working as expected: it probably isn't! Feel free to open an issue, or send me a note at `robin@robinsloan.com`.
 
-A demo client is included in this repository. See the [demo-client/](reference-client) folder for more info.
+If you've implemented a client or server, at any level of completeness, and you would like it added to this page, let me know!
+
+A demo client is included in this repository. See the [demo-client/](demo-client/) folder for more info.
 
 This work is offered under an MIT License. If there's some other license that is better or more interesting for these purposes, let me know.
