@@ -156,8 +156,6 @@ Client.setup = function() {
     Client.springfileEditor.value = STARTER_SPRINGFILE;
   }
 
-  Client.springfileEditor.value = STARTER_SPRINGFILE;
-
   // When you're viewing the Springfile modal and you click outside the textarea, it closes
   Client.springfileModal.addEventListener("mousedown", (e) => {
     if (e.target.tagName.toLowerCase() == "springfile-modal") {
@@ -591,7 +589,7 @@ Client.updateByteCounter = async function() {
 
 Client.homeServer = function() {
   // note, we expect a trailing slash
-  // return "http://localhost:8787/";
+  //return "http://localhost:8787/";
   return "https://bogbody.biz/"
 }
 
