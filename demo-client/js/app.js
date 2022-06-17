@@ -3,6 +3,8 @@ var Client = {};
 // TODO maybe use https://github.com/wilsonpage/fastdom
 // wrap all DOM mutations in that; idk, truly
 
+Client.DEV = false;
+
 // Rather than create them every time I need them:
 Client.encoder = new TextEncoder();
 Client.parser = new DOMParser();
@@ -308,7 +310,8 @@ Client.loadKeypairFromString = async function(fileString) {
 }
 
 Client.forgetKeypair = async function() {
-  localStorage.clear();
+  localStorage.removeItem("secretKey");
+  localStorage.removeItem("publicKey");
   Client.showDropZone();
 }
 
@@ -589,8 +592,11 @@ Client.updateByteCounter = async function() {
 
 Client.homeServer = function() {
   // note, we expect a trailing slash
-  //return "http://localhost:8787/";
-  return "https://bogbody.biz/"
+  if (Client.DEV) {
+    return "http://localhost:8787/";
+  } else {
+    return "https://bogbody.biz/"
+  }
 }
 
 Client.displayPublishError = async function(message) {
