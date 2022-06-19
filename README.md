@@ -14,8 +14,9 @@ Implementations:
 
 * [royragsdale/s83](https://github.com/royragsdale/s83), in Go
 * [michael-lazar/lets-dance](https://github.com/michael-lazar/lets-dance), in Python (with some great [notes](https://github.com/michael-lazar/lets-dance/blob/main/Notes.md))
+* [pteichman/ahoy], in Go
 
-If you've implemented a client or server, at any level of completeness, and you would like me to list it here, let me know.
+If you've implemented a client, server, or utility, at any level of completeness, and you would like me to list it here, let me know.
 
 A demo client is included in this repository. See the [demo-client/](demo-client/) folder for more info.
 
