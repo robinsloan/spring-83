@@ -15,6 +15,8 @@ Implementations:
 * [royragsdale/s83](https://github.com/royragsdale/s83), in Go
 * [michael-lazar/lets-dance](https://github.com/michael-lazar/lets-dance), in Python (with some great [notes](https://github.com/michael-lazar/lets-dance/blob/main/Notes.md))
 * [pteichman/ahoy], in Go
+* [rpj/spring83](https://github.com/rpj/spring83), in JavaScript
+* [cellu_cc/so83-gpu](https://gitlab.com/cellu_cc/so83-gpu), on GitLab, in OpenCL 🤯
 
 If you've implemented a client, server, or utility, at any level of completeness, and you would like me to list it here, let me know.
 
