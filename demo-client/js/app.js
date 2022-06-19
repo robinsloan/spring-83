@@ -683,9 +683,9 @@ Client.renderFullBoardHTML = async function() {
   const timestamp = new Date().toISOString().slice(0, 19) + "Z";
   const boardMarkdown = Client.editor.getValue();
   const boardHTML = marked.parse(boardMarkdown);
-  const timeElement = `\n<time datetime="${timestamp}"></time>`;
+  const timeElement = `<time datetime="${timestamp}"></time>\n`;
   console.log(`rendered full board HTML in ${(performance.now() - t).toPrecision(2)} seconds`);
-  return boardHTML + timeElement;
+  return timeElement + boardHTML;
 }
 
 Client.setBoardHTML = function(key, board) {
