@@ -17,7 +17,7 @@ Implementations:
 * [pteichman/ahoy](https://github.com/pteichman/ahoy), in Go
 * [rpj/spring83](https://github.com/rpj/spring83), in JavaScript
 * [cellu_cc/so83-gpu](https://gitlab.com/cellu_cc/so83-gpu), on GitLab, in OpenCL 🤯
-* [motevets/s83](https://github.com/motevets/s83), in Go (running [here](https://spring83.kindrobot.ca))
+* [motevets/springboard](https://github.com/motevets/springboard), in Go (running [here](https://spring83.kindrobot.ca))
 
 If you've implemented a client, server, or utility, at any level of completeness, and you would like me to list it here, let me know.
 
