@@ -10,7 +10,9 @@ A demo server is operating at `https://bogbody.biz`, if you'd like to read the s
 
 If it seems like the server isn't working as expected: it probably isn't! Feel free to open an issue, or send me a note at `robin@robinsloan.com`.
 
-Implementations:
+A demo client, [The Oakland Follower-Sentinel](https://github.com/robinsloan/the-oakland-follower-sentinel), is also available for inspection.
+
+Here are the implementations I know about currently:
 
 * [royragsdale/s83](https://github.com/royragsdale/s83), in Go
 * [michael-lazar/lets-dance](https://github.com/michael-lazar/lets-dance), in Python (with some great [notes](https://github.com/michael-lazar/lets-dance/blob/main/Notes.md))
@@ -20,7 +22,5 @@ Implementations:
 * [motevets/springboard](https://github.com/motevets/springboard), in Go (running [here](https://spring83.kindrobot.ca))
 
 If you've implemented a client, server, or utility, at any level of completeness, and you would like me to list it here, let me know.
-
-A demo client is included in this repository. See the [demo-client/](demo-client/) folder for more info.
 
 This work is offered under an MIT License. If there's some other license that is better or more interesting for these purposes, let me know.
