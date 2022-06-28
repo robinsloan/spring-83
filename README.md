@@ -23,4 +23,4 @@ Here are the implementations I know about currently:
 
 If you've implemented a client, server, or utility, at any level of completeness, and you would like me to list it here, let me know.
 
-This work is offered under an MIT License. If there's some other license that is better or more interesting for these purposes, let me know.
+This work is offered under a Creative Commons Attribution-ShareAlike license.
