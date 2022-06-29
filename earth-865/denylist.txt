@@ -1,7 +1,7 @@
 # Test key, to ensure denylist functionality is working
 d17eef211f510479ee6696495a2589f7e9fb055c2576749747d93444883e0123
 
-# Malformed key, should be ignored
+# Not a key, should be ignored
 zombo.com
 
 # Another test key
