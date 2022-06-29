@@ -1,0 +1,11 @@
+{
+  "name": "Earth-865",
+  "peers": [
+    "bogbody.biz",
+    "0l0.lol",
+    "spring83.kindrobot.ca",
+    "may83.club"
+  ],
+  "denylist": "TKTK",
+  "max_boards": 10000000
+}
