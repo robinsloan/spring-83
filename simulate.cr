@@ -15,9 +15,9 @@ end
 
 module Sim
   extend self
-  DESIRED_DATA =  99
-  NUM_PEERS    = 100
-  NUM_SAMPLED  =   5
+  DESIRED_DATA =   99
+  NUM_PEERS    = 1000
+  NUM_SAMPLED  =    5
 
   PROPORTION_EVIL = 0.1
 
@@ -83,6 +83,8 @@ module Sim
     avg_wasted = 0
     did_not_converge = 0
 
+    max_inbound_per_peer = 0
+
     50.times do |n|
       puts "---"
       puts "Run #{n}"
@@ -118,16 +120,15 @@ module Sim
       end
 
       inbound_per_peer = 0
-      max_inbound_per_peer = 0
 
       @@peers.each do |peer|
-        if inbound_per_peer > 0
-          inbound_per_peer += peer.num_inbound
-          inbound_per_peer /= 2
-        else
-          inbound_per_peer = peer.num_inbound
+        inbound_per_peer += peer.num_inbound
+        if (peer.num_inbound > max_inbound_per_peer)
+          max_inbound_per_peer = peer.num_inbound
         end
       end
+
+      inbound_per_peer /= @@peers.size
 
       if (avg_inbound_per_peer == 0)
         avg_inbound_per_peer = inbound_per_peer
@@ -156,6 +157,7 @@ module Sim
 
     puts "Num did not converge: #{did_not_converge}"
     puts "Avg inbound reqs per peer: #{avg_inbound_per_peer}"
+    puts "Max inbound reqs for any peer, in any run: #{max_inbound_per_peer}"
     puts "Avg time steps: #{avg_steps}"
     puts "Avg bandwidth: #{avg_bandwidth}"
     puts "Avg wasted bandwidth: #{avg_wasted}"

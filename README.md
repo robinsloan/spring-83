@@ -4,7 +4,15 @@ Welcome! This is a draft protocol that I believe might open up some interesting 
 
 This is speculative software intended to invite consideration and imagination; it doesn't have any "users" yet, only co-investigators. That's you!
 
-Here is [the current draft specification](draft-20220616.md). You can also read [the previous draft](draf-20220609.md).
+Current draft:
+
+* [Protocol specification](draft-20220616.md)
+* [Realm Memo](memo-realms.md)
+
+Previous drafts:
+
+* [20220619](draft-20220616.md)
+* [20220609](draf-20220609.md).
 
 A demo server is operating at `https://bogbody.biz`, if you'd like to read the spec and attempt to interact with it. This server might drop offline at any time, and any data you transmit to it might be lost. It is running in a cloud environment in which data can take about a minute to propagate around the world -- a perfect match for the pace of this protocol!
 
