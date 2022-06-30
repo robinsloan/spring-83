@@ -6,7 +6,7 @@ This is speculative software intended to invite consideration and imagination; i
 
 Current draft:
 
-* [Protocol specification](draft-20220616.md)
+* [Protocol specification](draft-20220629.md)
 * [Realm Memo](memo-realms.md)
 
 Previous drafts:
