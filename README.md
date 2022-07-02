@@ -28,6 +28,7 @@ Here are the implementations I know about currently:
 * [rpj/spring83](https://github.com/rpj/spring83), in JavaScript
 * [cellu_cc/so83-gpu](https://gitlab.com/cellu_cc/so83-gpu), on GitLab, in OpenCL 🤯
 * [motevets/springboard](https://github.com/motevets/springboard), in Go (running [here](https://spring83.kindrobot.ca))
+* [rdmurphy/spring-board-element](https://github.com/rdmurphy/spring-board-element), a web component
 
 If you've implemented a client, server, or utility, at any level of completeness, and you would like me to list it here, let me know.
 

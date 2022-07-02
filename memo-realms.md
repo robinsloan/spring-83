@@ -32,7 +32,7 @@ https://www.ietf.org/rfc/rfc2119.txt
 
 ## Defining a realm
 
-A realm is described in a JSON document reachable on the public internet.
+A realm must be described in a JSON document reachable on the public internet.
 
 Here is a minimal `realm.json`:
 
@@ -52,7 +52,7 @@ Here is a minimal `realm.json`:
 
 If `max_boards` is less than or equal to 0, there is no limit on the number of boards in the realm.
 
-A server participating in a realm must retrieve the JSON document and cache it, updating it at most once per day and at least once per week.
+A server participating in a realm must retrieve the JSON document and cache it, updating it weekly.
 
 > *Aside:* There is no automatic or "trustless" way to join a realm; as with BGP, the foundational routing protocol of the internet, you gotta talk to somebody! 
 
