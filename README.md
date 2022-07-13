@@ -12,7 +12,7 @@ Current draft:
 Previous drafts:
 
 * [20220619](draft-20220616.md)
-* [20220609](draf-20220609.md).
+* [20220609](draf-20220609.md)
 
 A demo server is operating at `https://bogbody.biz`, if you'd like to read the spec and attempt to interact with it. This server might drop offline at any time, and any data you transmit to it might be lost. It is running in a cloud environment in which data can take about a minute to propagate around the world -- a perfect match for the pace of this protocol!
 
