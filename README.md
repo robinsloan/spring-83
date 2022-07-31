@@ -22,13 +22,14 @@ A demo client, [The Oakland Follower-Sentinel](https://github.com/robinsloan/the
 
 Here are the implementations I know about currently:
 
+* [rdmurphy/spring-board-element](https://github.com/rdmurphy/spring-board-element), a web component
+* [rpj/spring83](https://github.com/rpj/spring83), in JavaScript
 * [royragsdale/s83](https://github.com/royragsdale/s83), in Go
+* [motevets/springboard](https://github.com/motevets/springboard), in Go (running [here](https://spring83.kindrobot.ca))
 * [michael-lazar/lets-dance](https://github.com/michael-lazar/lets-dance), in Python (with some great [notes](https://github.com/michael-lazar/lets-dance/blob/main/Notes.md))
 * [pteichman/ahoy](https://github.com/pteichman/ahoy), in Go
-* [rpj/spring83](https://github.com/rpj/spring83), in JavaScript
 * [cellu_cc/so83-gpu](https://gitlab.com/cellu_cc/so83-gpu), on GitLab, in OpenCL 🤯
-* [motevets/springboard](https://github.com/motevets/springboard), in Go (running [here](https://spring83.kindrobot.ca))
-* [rdmurphy/spring-board-element](https://github.com/rdmurphy/spring-board-element), a web component
+* [JohnB/spring83](https://github.com/JohnB/spring83), a client
 
 If you've implemented a client, server, or utility, at any level of completeness, and you would like me to list it here, let me know.
 
