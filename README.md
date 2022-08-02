@@ -18,7 +18,7 @@ A demo server is operating at `https://bogbody.biz`, if you'd like to read the s
 
 If it seems like the server isn't working as expected: it probably isn't! Feel free to open an issue, or send me a note at `robin@robinsloan.com`.
 
-A demo client, [The Oakland Follower-Sentinel](https://github.com/robinsloan/the-oakland-follower-sentinel), is also available for inspection.
+A demo client, [The Oakland Follower-Sentinel](https://github.com/robinsloan/the-oakland-follower-sentinel), is also available for inspection. Another client, [The Kingswood Palimpsest](https://cyborg.rodeo/palimpsest/), take a different approach to display -- and it's fabulous.
 
 Here are the implementations I know about currently:
 
