@@ -1,13 +1,14 @@
 # Spring '83
 
-Welcome! This is a draft protocol that I believe might open up some interesting new possibilities on the internet. If you are just discovering it, I recommend reading [this narrative description](https://www.robinsloan.com/lab/specifying-spring-83/). Don't miss the growing [discussion](https://www.robinsloan.com/lab/specifying-spring-83/#discussion), either.
+Welcome! This is a draft protocol that I believe might open up some interesting new possibilities on the internet. If you are just discovering it, I recommend reading [this narrative description](https://www.robinsloan.com/lab/specifying-spring-83/). Don't miss my notes on [a summer spent operating the protocol with other people](https://www.robinsloan.com/lab/specifying-spring-83/#summer), either.
 
-This is speculative software intended to invite consideration and imagination; it doesn't have any "users" yet, only co-investigators. That's you!
+This is speculative software intended to invite consideration and imagination; it doesn't have any "users", only co-investigators.
+
+This project has been quiet for a while, and will remain so for a while longer -- but I'm thinking hard about ways to refine and remix these ideas, and I'll return with some new offerings sometime in 2023.
 
 Current draft:
 
 * [Protocol specification](draft-20220629.md)
-* [Realms Memo](memo-realms.md)
 
 Previous drafts:
 
@@ -18,7 +19,7 @@ A demo server is operating at `https://bogbody.biz`, if you'd like to read the s
 
 If it seems like the server isn't working as expected: it probably isn't! Feel free to open an issue, or send me a note at `robin@robinsloan.com`.
 
-A demo client, [The Oakland Follower-Sentinel](https://github.com/robinsloan/the-oakland-follower-sentinel), is also available for inspection. Another client, [The Kingswood Palimpsest](https://cyborg.rodeo/palimpsest/), take a different approach to display -- and it's fabulous.
+A demo client, [The Oakland Follower-Sentinel](https://github.com/robinsloan/the-oakland-follower-sentinel), is also available for inspection. Another client, [The Kingswood Palimpsest](https://cyborg.rodeo/palimpsest/), takes a different approach to display -- and it's fabulous.
 
 Here are the implementations I know about currently:
 
