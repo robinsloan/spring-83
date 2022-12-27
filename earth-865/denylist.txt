@@ -1,8 +1,0 @@
-# Test key, to ensure denylist functionality is working
-d17eef211f510479ee6696495a2589f7e9fb055c2576749747d93444883e0123
-
-# Not a key, should be ignored
-zombo.com
-
-# Another test key
-69143e1ffe490de23a1081575fd06048a2a1b5783eb44efa0c05185de83e0123

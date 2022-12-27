@@ -15,14 +15,9 @@ Previous drafts:
 * [20220619](draft-20220616.md)
 * [20220609](draf-20220609.md)
 
-A demo server is operating at `https://bogbody.biz`, if you'd like to read the spec and attempt to interact with it. This server might drop offline at any time, and any data you transmit to it might be lost. It is running in a cloud environment in which data can take about a minute to propagate around the world -- a perfect match for the pace of this protocol!
-
-If it seems like the server isn't working as expected: it probably isn't! Feel free to open an issue, or send me a note at `robin@robinsloan.com`.
-
-A demo client, [The Oakland Follower-Sentinel](https://github.com/robinsloan/the-oakland-follower-sentinel), is also available for inspection. Another client, [The Kingswood Palimpsest](https://cyborg.rodeo/palimpsest/), takes a different approach to display -- and it's fabulous.
-
 Here are the implementations I know about currently:
 
+* [The Kingswood Palimpsest](https://cyborg.rodeo/palimpsest/), a client
 * [rdmurphy/spring-board-element](https://github.com/rdmurphy/spring-board-element), a web component
 * [rpj/spring83](https://github.com/rpj/spring83), in JavaScript
 * [royragsdale/s83](https://github.com/royragsdale/s83), in Go
