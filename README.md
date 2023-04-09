@@ -26,6 +26,7 @@ Here are the implementations I know about currently:
 * [pteichman/ahoy](https://github.com/pteichman/ahoy), in Go
 * [cellu_cc/so83-gpu](https://gitlab.com/cellu_cc/so83-gpu), on GitLab, in OpenCL 🤯
 * [JohnB/spring83](https://github.com/JohnB/spring83), a client
+* [hanfel-dovned/board](https://github.com/hanfel-dovned/Board), an Urbit app ([more info](https://urbit.org/applications/~hanfel-dovned/board))
 
 If you've implemented a client, server, or utility, at any level of completeness, and you would like me to list it here, let me know.
 
